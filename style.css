@@ -773,7 +773,13 @@ ion-icon {
 
 .row {
   display: grid;
-  /* grid-template-areas: "col"; */
+}
+
+.col-2 {
+  grid-template-columns: auto auto;
+}
+
+.col-3 {
   grid-template-columns: auto auto auto;
 }
 
