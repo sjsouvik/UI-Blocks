@@ -466,7 +466,7 @@ ion-icon {
 .card {
   margin: 1rem 0;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
   max-width: 288px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -477,8 +477,8 @@ ion-icon {
 
 .card img {
   /* height: 220px; */
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  /* border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; */
 }
 
 .card-body {
@@ -632,6 +632,7 @@ ion-icon {
 .nav-brand {
   font-weight: bold;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .navigation ul {
