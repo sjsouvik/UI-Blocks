@@ -455,12 +455,24 @@ ion-icon {
 
 /* Cards */
 
+/* to show cards in a row using flexbox */
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .card {
-  margin: 1rem;
+  margin: 1rem 0;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   max-width: 288px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -485,13 +497,6 @@ ion-icon {
 .card-text {
   letter-spacing: 1px;
   flex-grow: 1;
-}
-
-/* to show cards in a row using flexbox */
-.card-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 /* Horizontal cards */
