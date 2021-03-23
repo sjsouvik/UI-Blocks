@@ -6,6 +6,11 @@ body {
   /* letter-spacing: 1px; */
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 /* Layout - Grid implementation */
 
 .grid-row {
@@ -13,7 +18,7 @@ body {
   grid-template-areas:
     "head head"
     "nav main"
-    "foot foot";
+    "nav foot";
   grid-template-columns: 175px auto;
 }
 
@@ -25,7 +30,10 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 1.5rem;
-  /* position: sticky; */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-navigation a {
@@ -51,32 +59,40 @@ body {
 
 .side-menu {
   grid-area: nav;
-  /* border: 1px solid black; */
-  /* position: fixed;
-  top: 5.4rem;
-  height: 100%; */
-  background-color: var(--alert-secondary-background-color);
+  position: fixed;
+  top: 5.5rem;
+  /* bottom: 5rem; */
+  bottom: 0;
+  height: auto;
+  overflow: auto;
+
+  /* background-color: var(--alert-secondary-background-color); */
   letter-spacing: 1px;
-  /* overflow-y: scroll; */
   padding: 0 0.25rem;
+  width: 175px;
 }
 
 .side-menu a {
   display: block;
-  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
   text-decoration: none;
   color: var(--primary-color);
 }
 
 .side-menu a:hover {
-  color: #3c366b;
+  /* color: #3c366b; */
+  /* color: #3f4ed2; */
+  color: var(--text-color);
+  /* background-color: #acb3eb; */
+  background-color: var(--primary-color);
 }
 
 .grid-row main {
   grid-area: main;
-  /* border-top: 1px solid black; */
-  /* border-bottom: 1px solid black; */
   padding: 1rem;
+  position: relative;
+  top: 4rem;
 }
 
 .grid-row main section {
@@ -86,15 +102,20 @@ body {
 .grid-row footer {
   grid-area: foot;
   text-align: center;
+  margin-top: 4rem;
   padding: 1.5rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  /* background-color: var(--primary-color); */
+  /* color: var(--text-color); */
+
+  color: var(--primary-color);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .grid-row footer a {
   margin: 1rem;
   text-decoration: none;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--primary-color);
 }
 
 .grid-row footer p {
@@ -298,6 +319,10 @@ body {
 
 .btn-primary {
   background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #3f4ed2;
 }
 
 .btn-secondary {
@@ -520,22 +545,23 @@ ion-icon {
   margin-bottom: 0;
 }
 
-.icons-horizontal ion-icon {
+.icons-horizontal a {
+  cursor: pointer;
+  color: black;
   margin: 1rem;
-  font-size: 180%;
+  font-size: 150%;
 }
 
 @media only screen and (max-width: 715px) {
-  .icons-horizontal ion-icon {
+  .icons-horizontal a {
     margin: 0.6rem;
-    /* font-size: 160%; */
   }
 }
 
 @media only screen and (max-width: 630px) {
-  .icons-horizontal ion-icon {
+  .icons-horizontal a {
     margin: 0.25rem;
-    font-size: 160%;
+    font-size: 140%;
   }
 }
 
