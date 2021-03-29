@@ -490,8 +490,6 @@ ion-icon {
 
 .card {
   margin: 1rem 0;
-  border: 1px solid transparent;
-  /* border-radius: 0.25rem; */
   max-width: 288px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -507,21 +505,56 @@ ion-icon {
 }
 
 .card-body {
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .card-title {
-  letter-spacing: 1px;
   font-weight: 500;
-  margin-top: 0;
+  margin: 0;
 }
 
 .card-text {
-  letter-spacing: 1px;
   flex-grow: 1;
+  margin: 1rem 0;
+}
+
+/* Vertical cards for Ecommerce products */
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 230px;
+}
+
+.btn-image {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-image ion-icon {
+  font-size: 2rem;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.card-price {
+  margin: 0.5rem 0;
+}
+
+.card-off {
+  color: #ff905a;
+  font-size: 0.85rem;
 }
 
 /* Horizontal cards */
@@ -563,6 +596,21 @@ ion-icon {
     margin: 0.25rem;
     font-size: 140%;
   }
+}
+
+/* Horizontal cards for Cart */
+
+.horizontal-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-section p {
+  margin: 0;
+}
+
+.product-title {
+  font-weight: bold;
 }
 
 /* Modals */
