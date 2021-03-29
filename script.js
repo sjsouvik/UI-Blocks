@@ -48,3 +48,23 @@ const arrowTop = document.querySelector(".arrow-top");
 window.addEventListener("scroll", () => (arrowTop.hidden = pageYOffset < 400));
 
 arrowTop.addEventListener("click", () => window.scrollTo(pageXOffset, 0));
+
+// hamburger for mobile view
+const hamburger = document.querySelector(".hamburger");
+const sideMenu = document.querySelector(".side-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  sideMenu.classList.toggle("active");
+}
+
+const sideMenuLink = document.querySelectorAll(".side-menu-link");
+
+sideMenuLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  sideMenu.classList.remove("active");
+}

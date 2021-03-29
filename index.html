@@ -16,31 +16,44 @@
   </head>
   <body class="grid-row">
     <header>
-      <nav class="page-navigation">
-        <div class="nav-brand"><a href="/">UI BLOCKS</a></div>
-        <ul>
-          <li>v0.0</li>
-          <li><a href="https://github.com/sjsouvik/UI-Blocks" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-          <li><a href="https://bit.ly/souvik-twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        </ul>
-      </nav>      
+      <nav class="page-navigation"> 
+        <div class="brand">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+                   
+          <a href="/" class="nav-brand">UI BLOCKS</a>        
+        </div>
+      
+        <ul class="nav-menu">
+          <li class="nav-item">v0.0</li>
+          <li class="nav-item">
+            <a href="https://github.com/sjsouvik/UI-Blocks" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://bit.ly/souvik-twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>                 
+      </nav>            
     </header>
 
     <nav class="side-menu">
-      <a href="#installation">Installation</a>
-      <a href="#alert">Alert</a>
-      <a href="#badge">Badge</a>
-      <a href="#button">Button</a>
-      <a href="#card">Card</a>
-      <a href="#modal">Modal</a>
-      <a href="#input">Input</a>
-      <a href="#list">List</a>
-      <a href="#navigation">Navigation</a>
-      <a href="#avatar">Avatar</a>
-      <a href="#image">Image</a>
-      <a href="#typography">Typography</a>
-      <a href="#toast">Toast</a>
-      <a href="#grid">Grid</a>
+      <a class="side-menu-link" href="#installation">Installation</a>
+      <a class="side-menu-link" href="#alert">Alert</a>
+      <a class="side-menu-link" href="#badge">Badge</a>
+      <a class="side-menu-link" href="#button">Button</a>
+      <a class="side-menu-link" href="#card">Card</a>
+      <a class="side-menu-link" href="#modal">Modal</a>
+      <a class="side-menu-link" href="#input">Input</a>
+      <a class="side-menu-link" href="#list">List</a>
+      <a class="side-menu-link" href="#navigation">Navigation</a>
+      <a class="side-menu-link" href="#avatar">Avatar</a>
+      <a class="side-menu-link" href="#image">Image</a>
+      <a class="side-menu-link" href="#typography">Typography</a>
+      <a class="side-menu-link" href="#toast">Toast</a>
+      <a class="side-menu-link" href="#grid">Grid</a>
     </nav>
 
     <main>
@@ -569,9 +582,9 @@
               <div class="horizontal-section">
                 <p>
                   Qty:
-                  <button class="btn btn-outline-primary">+</button>
+                  <button class="btn btn-outline-primary btn-inc">+</button>
                   1
-                  <button class="btn btn-outline-primary">-</button>
+                  <button class="btn btn-outline-primary btn-dec">-</button>
                 </p>
                 <p>Size: 40</p>
               </div>
@@ -594,8 +607,8 @@
         <div class="modal">
           <div class="modal-content">
             <span
-              class="badge rounded-pill bg-primary close-button"              
-              ><ion-icon name="close"></ion-icon
+              class="close-button"              
+              ><ion-icon name="close-circle"></ion-icon
             ></span>
             <div>
               <h3>This is a Modal</h3>
