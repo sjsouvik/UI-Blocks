@@ -10,6 +10,47 @@ body {
   padding: 0;
 }
 
+/* Component Library CSS variables */
+:root {
+  --text-color: white;
+  --text-dark-color: black;
+
+  /* Alerts */
+  --alert-primary-background-color: #cfe2ff;
+  --alert-primary-font-color: #084298;
+
+  --alert-secondary-background-color: #e2e3e5;
+  --alert-secondary-font-color: #41464b;
+
+  --alert-success-background-color: #d1e7dd;
+  --alert-success-font-color: #0f5132;
+
+  --alert-danger-background-color: #f8d7da;
+  --alert-danger-font-color: #842029;
+
+  --alert-warning-background-color: #fff3cd;
+  --alert-warning-font-color: #664d03;
+
+  --alert-info-background-color: #cff4fc;
+  --alert-info-font-color: #055160;
+
+  --alert-light-background-color: white;
+  --alert-light-font-color: #636464;
+
+  --alert-dark-background-color: #d3d3d4;
+  --alert-dark-font-color: #141619;
+
+  /* --primary-color: #0d6efd; */
+  --primary-color: #5a67d8;
+  --secondary-color: #6c757d;
+  --success-color: green;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: black;
+}
+
 /* Layout - Grid implementation */
 
 .grid-row {
@@ -32,7 +73,7 @@ body {
   justify-content: space-between;
   background-color: var(--primary-color);
   color: var(--text-color);
-  padding: 2.1rem;
+  padding: 2.1rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -200,57 +241,6 @@ body {
 .grid-row footer p a {
   margin: 0;
   text-decoration: underline;
-}
-
-/* Component Library styles */
-:root {
-  --text-color: white;
-  --text-dark-color: black;
-
-  /* Alerts */
-  --alert-primary-background-color: #cfe2ff;
-  --alert-primary-font-color: #084298;
-
-  --alert-secondary-background-color: #e2e3e5;
-  --alert-secondary-font-color: #41464b;
-
-  --alert-success-background-color: #d1e7dd;
-  --alert-success-font-color: #0f5132;
-
-  --alert-danger-background-color: #f8d7da;
-  --alert-danger-font-color: #842029;
-
-  --alert-warning-background-color: #fff3cd;
-  --alert-warning-font-color: #664d03;
-
-  --alert-info-background-color: #cff4fc;
-  --alert-info-font-color: #055160;
-
-  --alert-light-background-color: white;
-  --alert-light-font-color: #636464;
-
-  --alert-dark-background-color: #d3d3d4;
-  --alert-dark-font-color: #141619;
-
-  /* Badges */
-  /* --badge-primary-background-color: #0d6efd;
-  --badge-secondary-background-color: #6c757d;
-  --badge-success-background-color: green;
-  --badge-danger-background-color: #dc3545;
-  --badge-warning-background-color: #ffc107;
-  --badge-info-background-color: #0dcaf0;
-  --badge-light-background-color: #f8f9fa;
-  --badge-dark-background-color: black; */
-
-  /* --primary-color: #0d6efd; */
-  --primary-color: #5a67d8;
-  --secondary-color: #6c757d;
-  --success-color: green;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #0dcaf0;
-  --light-color: #f8f9fa;
-  --dark-color: black;
 }
 
 /* alerts */
