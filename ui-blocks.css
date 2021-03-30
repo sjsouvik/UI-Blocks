@@ -962,6 +962,10 @@ ion-icon {
     padding: 0.5rem;
   }
 
+  .horizontal {
+    height: 10rem;
+  }
+
   .horizontal img {
     width: 6rem;
   }
@@ -999,6 +1003,10 @@ ion-icon {
 
   .grid-row main section {
     padding: 0.5rem;
+  }
+
+  .horizontal {
+    height: 9rem;
   }
 
   .horizontal img {
