@@ -116,8 +116,9 @@ body {
 
 .bar {
   display: block;
-  width: 1.5rem;
+  width: 2rem;
   height: 0.25rem;
+  border-radius: 0.25rem;
   margin: 0.25rem 0.5rem 0.25rem 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
