@@ -555,8 +555,11 @@ ion-icon {
 
 .card {
   margin: 1rem 0;
-  max-width: 288px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vertical {
+  max-width: 288px;
 }
 
 .card:hover {
@@ -1047,4 +1050,28 @@ textarea {
     margin: 30% auto;
     overflow: scroll;
   }
+
+  /* ecommerce cards */
+  /* .card-row {
+    justify-content: space-between;
+  }
+  .vertical {
+    max-width: 9rem;
+  }
+
+  .card img,
+  .card-image img {
+    width: 144px;
+  }
+
+  .desc {
+    flex-grow: 2;
+  } */
+
+  /* .grid-row main {
+    padding: 0;
+  }
+  .grid-row main section {
+    padding: 0;
+  } */
 }
