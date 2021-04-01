@@ -729,15 +729,20 @@ ion-icon {
 
 .form-control {
   outline: none;
-  border: 1px solid grey;
+  border: 1px solid black;
   border-radius: 0.25rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   width: 80%;
+  font-size: 0.9rem;
+}
+
+textarea {
+  font-family: "Roboto";
 }
 
 .form-control:focus {
-  background-color: #ccc;
+  border-color: var(--primary-color);
 }
 
 /* Lists */
@@ -789,6 +794,15 @@ ion-icon {
 .navigation ul li {
   /* display: inline; */
   padding: 0 0.5rem;
+}
+
+.navigation ul li:hover {
+  text-decoration: underline;
+}
+
+.navigation .btn {
+  background-color: var(--text-color);
+  color: var(--primary-color);
 }
 
 /* Avatars */
@@ -907,6 +921,7 @@ ion-icon {
 
 .toast-warning {
   background-color: var(--warning-color);
+  color: var(--alert-warning-font-color);
 }
 
 .toast-info {
