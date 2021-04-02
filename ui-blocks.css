@@ -560,6 +560,7 @@ ion-icon {
 
 .vertical {
   max-width: 288px;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -567,9 +568,7 @@ ion-icon {
 }
 
 .card img {
-  /* height: 220px; */
-  /* border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem; */
+  width: 288px;
 }
 
 .card-body {
