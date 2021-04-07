@@ -635,7 +635,7 @@ ion-icon {
   height: 12rem;
 }
 
-.horizontal img {
+.horizontal-card-image {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.25rem;
   width: 144px;
@@ -985,7 +985,7 @@ textarea {
     height: 10rem;
   }
 
-  .horizontal img {
+  .horizontal-card-image {
     width: 6rem;
   }
 
@@ -1028,7 +1028,7 @@ textarea {
     height: 9rem;
   }
 
-  .horizontal img {
+  .horizontal-card-image {
     width: 4.5rem;
   }
 
