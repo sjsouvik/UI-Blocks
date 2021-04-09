@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="UI Blcoks: A CSS Component Library">
+    <meta property="og:description" content="Simple, modular and accessible UI components for faster web development. Built with HTML5, CSS and JS">    
+    <meta name="og:type" content="Library Documentation"/>
+    <meta property="og:url" content="https://ui-blocks.netlify.app">
+    <meta property="og:site_name" content="ui-blocks">
+
+    <title>Component Library</title>
+    <link rel="stylesheet" href="ui-blocks.css" />
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body class="grid-row">
+    <header>
+      <nav class="page-navigation"> 
+        <div class="brand">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+                   
+          <a href="/" class="nav-brand">UI BLOCKS</a>        
+        </div>
+      
+        <ul class="nav-menu">
+          <li class="nav-item">v0.0</li>
+          <li class="nav-item">
+            <a href="https://github.com/sjsouvik/UI-Blocks" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://bit.ly/souvik-twitter" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>                 
+      </nav>            
+    </header>
+
+    <nav class="side-menu">
+      <a class="side-menu-link" href="#installation">Installation</a>
+      <a class="side-menu-link" href="#alert">Alert</a>
+      <a class="side-menu-link" href="#badge">Badge</a>
+      <a class="side-menu-link" href="#button">Button</a>
+      <a class="side-menu-link" href="#card">Card</a>
+      <a class="side-menu-link" href="#modal">Modal</a>
+      <a class="side-menu-link" href="#input">Input</a>
+      <a class="side-menu-link" href="#list">List</a>
+      <a class="side-menu-link" href="#navigation">Navigation</a>
+      <a class="side-menu-link" href="#avatar">Avatar</a>
+      <a class="side-menu-link" href="#image">Image</a>
+      <a class="side-menu-link" href="#typography">Typography</a>
+      <a class="side-menu-link" href="#toast">Toast</a>
+      <a class="side-menu-link" href="#grid">Grid</a>
+    </nav>
+
+    <main>
+      <section id="installation">
+        <h2>Installation</h2>
+
+        <h3>CSS</h3>
+        <p>Copy-paste the stylesheet <code> link</code> into <code>head</code> section of your web page before all other stylesheets to load our CSS.</p>
+
+        <!-- Code snippet from Carbon for CSS of component library -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/FkPOLNfWFO8nygiJMxDB"
+        style="width: 757px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/FkPOLNfWFO8nygiJMxDB"
+        style="width: 100%; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+
+        <h3>JS</h3>
+        <p>Some of our components require the use of JavaScript and icons to function and show some messages properly. Place the following <code>script</code> near the end of your page inside <code>body</code> tag.</p>
+
+        <!-- Code snippet from Carbon for JS of component library -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/pUjsCeNAStq7JQpMnN4K"
+        style="width: 681px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/pUjsCeNAStq7JQpMnN4K"
+        style="width: 100%; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="alert">
+        <h3>Alerts</h3>
+        <div class="alert alert-primary">
+          <ion-icon class="alert-icon" name="information-circle"></ion-icon>A
+          simple primary alert — <strong>check it out!</strong>
+          <span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="alert alert-secondary">
+          <ion-icon class="alert-icon" name="information-circle"></ion-icon> A
+          simple secondary alert—<strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="alert alert-success">
+          <ion-icon class="alert-icon" name="checkmark-circle"></ion-icon>A
+          simple success alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="alert alert-danger">
+          <ion-icon class="alert-icon" name="alert-circle"></ion-icon>A simple
+          danger alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+        
+
+        <!-- Will uncomment it for the next version, not required as of now -->
+        
+        <!-- 
+          <div class="alert alert-warning">
+          <ion-icon class="alert-icon" name="alert-circle"></ion-icon>A simple
+          warning alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+          <div class="alert alert-info">
+          <ion-icon class="alert-icon" name="information-circle"></ion-icon>A
+          simple info alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="alert alert-light">
+          <ion-icon class="alert-icon" name="information-circle"></ion-icon>A
+          simple light alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="alert alert-dark">
+          <ion-icon class="alert-icon" name="information-circle"></ion-icon>A
+          simple dark alert — <strong>check it out!</strong
+          ><span class="alert-close"><ion-icon name="close"></ion-icon></span>
+        </div> 
+      -->
+        
+        <!-- Code snippet from Carbon for alerts -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/vxqvDdm4QCYLXMzHBUb0"
+        style="width: 732px; height: 763px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>       -->
+        
+        <iframe
+        src="https://carbon.now.sh/embed/vxqvDdm4QCYLXMzHBUb0"
+        style="width: 100%; height: 763px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>        
+      </section>
+
+      <section id="badge">
+        <h3>Badges</h3>        
+          <span class="badge bg-primary">Primary</span>
+          <span class="badge bg-secondary">Secondary</span>
+          <span class="badge bg-success">Success</span>
+          <span class="badge bg-danger">Danger</span>
+        
+        <!-- Will uncomment it for the next version, not required as of now -->
+        <!-- 
+         <span class="badge bg-warning">Warning</span> 
+        <span class="badge bg-info">Info</span>
+        <span class="badge bg-light">Light</span>
+        <span class="badge bg-dark">Dark</span>
+       -->
+
+       <!-- Code snippet from Carbon for badges -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/tyjmhpJrxMUnslloGp6j"
+        style="width: 570px; height: 260px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+        
+        <iframe
+        src="https://carbon.now.sh/embed/tyjmhpJrxMUnslloGp6j"
+        style="width: 100%; height: 260px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>      
+     
+        <h4>Badges on Icons</h4>          
+          <span>
+          <ion-icon name="mail" class="ic-bg"></ion-icon>
+          <span          
+            class="badge rounded-pill bg-primary bg-icon"
+            >15</span
+          ></span>
+
+          <span>
+          <ion-icon  name="cart" class="ic-bg"></ion-icon>
+          <span          
+            class="badge rounded-pill bg-primary bg-icon"
+            >5</span
+          ></span>          
+
+          <!-- Code snippet from Carbon for badges on icons -->
+          
+          <!-- <iframe
+          src="https://carbon.now.sh/embed/iGsV7e3XcQnwL9OLQL2G"
+          style="width: 707px; height: 391px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe> -->
+          <iframe
+          src="https://carbon.now.sh/embed/iGsV7e3XcQnwL9OLQL2G"
+          style="width: 100%; height: 391px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+          </iframe>
+
+        <h4>Pill Badges</h4>        
+          <span class="badge rounded-pill bg-primary">Primary</span>
+          <span class="badge rounded-pill bg-secondary">Secondary</span>
+          <span class="badge rounded-pill bg-success">Success</span>
+          <span class="badge rounded-pill bg-danger">Danger</span>        
+
+        <!-- Will uncomment it for the next version, not required as of now -->
+        <!-- 
+        <span class="badge rounded-pill bg-warning">Warning</span>
+        <span class="badge rounded-pill bg-info">Info</span>
+        <span class="badge rounded-pill bg-light">Light</span>
+        <span class="badge rounded-pill bg-dark">Dark</span>
+       -->
+
+       <!-- Code snippet from Carbon for pill badges -->
+       <!-- <iframe
+       src="https://carbon.now.sh/embed/k0n8moy8HMEVh8kgJXMV"
+       style="width: 680px; height: 260px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+       sandbox="allow-scripts allow-same-origin">
+      </iframe>      -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/k0n8moy8HMEVh8kgJXMV"
+        style="width: 100%; height: 260px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </section>
+
+      <section id="button">
+        <h3>Buttons</h3>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- Will uncomment it for the next version, not required as of now -->
+
+        <!-- 
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button> 
+
+        <button type="button" class="btn btn-link">Link</button>
+      -->        
+
+        <!-- Code snippet from Carbon for buttons -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/2szOkWhrCcsran5LHPro"
+        style="width: 707px; height: 260px; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>     -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/2szOkWhrCcsran5LHPro"
+        style="width: 100%; height: 260px; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Outline Buttons</h4>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">
+          Secondary
+        </button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+
+        <!-- Will uncomment it for the next version, not required as of now -->
+
+        <!-- 
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button> 
+      -->
+
+        <!-- Code snippet from Carbon for outline buttons -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/Z2CWVB8gnqZYpOInhY6i"
+        style="width: 774px; height: 260px; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/Z2CWVB8gnqZYpOInhY6i"
+        style="width: 100%; height: 260px; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Buttons with Different size</h4>
+        <button class="btn btn-primary btn-lg">Large Button</button>
+        <button class="btn btn-secondary btn-sm">Small Button</button>
+
+        <!-- Code snippet from Carbon for buttons of diferent size -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/Z2axhvc7iI6zc7AUYX5o"
+        style="width: 673px; height: 223px; display: block; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/Z2axhvc7iI6zc7AUYX5o"
+        style="width: 100%; height: 223px; display: block; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Buttons uisng anchor element</h4>
+        <a href="/" class="btn btn-primary">Primary Link</a>
+        <a href="/" class="btn btn-secondary">Secondary Link</a>
+
+        <!-- Code snippet from Carbon for buttons using anchor element -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/2c1bIWqGaBEJCPnY2nl6"
+        style="width: 630px; height: 223px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/2c1bIWqGaBEJCPnY2nl6"
+        style="width: 100%; height: 223px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Buttons with icon</h4>
+        <button class="btn btn-primary">
+          <ion-icon name="mail" class="icon-left"></ion-icon>Email
+        </button>
+        <button class="btn btn-secondary">
+          <ion-icon name="call" class="icon-left"></ion-icon>Call us
+        </button>
+
+        <button class="btn btn-primary">
+          Facebook<ion-icon name="logo-facebook" class="icon-right"></ion-icon>
+        </button>
+        <button class="btn btn-secondary">
+          Twitter<ion-icon name="logo-twitter" class="icon-right"></ion-icon>
+        </button>
+
+        <!-- Code snippet from Carbon for buttons with icons -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/HT6sklCoPcHiNFZtbq39"
+        style="width: 749px; height: 409px; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/HT6sklCoPcHiNFZtbq39"
+        style="width: 100%; height: 409px; display: block; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Buttons with badge</h4>
+        <button class="btn btn-primary">
+          Notifications <span class="badge bg-danger">4</span>
+        </button>
+        <a href="/" class="btn btn-secondary"
+          >Profile <span class="badge bg-success">9</span></a
+        >
+
+        <!-- Code snippet from Carbon for buttons with badges -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/W9xmnDkFilYmwGGyDY4G"
+        style="width: 631px; height: 298px; display: block; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe> -->
+
+      <iframe
+        src="https://carbon.now.sh/embed/W9xmnDkFilYmwGGyDY4G"
+        style="width: 100%; height: 298px; display: block; margin-top: 0.5rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      </section>
+
+      <section id="card">
+        <h3>Cards</h3>
+
+        <h4>Simple card</h4>
+        <div class="card vertical">
+          <div class="card-body">
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              dolor quae nam, reiciendis iure esse obcaecati velit molestiae
+              possimus quia iste, asperiores reprehenderit accusantium
+              recusandae ipsum numquam excepturi repudiandae repellendus.
+            </p>
+
+            <button class="btn btn-outline-primary">LEARN MORE</button>
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for simple card -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/mmwd1tMXYtTOhI6WEeFG"
+        style="width: 749px; height: 409px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/mmwd1tMXYtTOhI6WEeFG"
+        style="width: 100%; height: 409px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Vertical cards</h4>
+        <div class="card-row">
+          <div class="card vertical">
+            <img src="https://via.placeholder.com/288x220" alt="image" />
+
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                nisi provident voluptatem aperiam facilis voluptates rerum dicta
+                ab recusandae esse, veritatis necessitatibus praesentium
+                cupiditate voluptas exercitationem quo ad impedit quasi.
+              </p>
+              <button class="btn btn-outline-primary">SHARE</button>
+            </div>
+          </div>
+
+          <div class="card vertical">
+            <img src="https://via.placeholder.com/288x220" alt="image" />
+
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                nisi provident voluptatem aperiam facilis voluptates rerum dicta
+                ab recusandae esse, veritatis necessitatibus praesentium
+                cupiditate voluptas exercitationem quo ad impedit quasi.
+              </p>
+
+              <button class="btn btn-outline-primary">ENROLL NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for vertical cards -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/tHApvDM0TpAQvevxUqG0"
+        style="width: 757px; height: 782px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/tHApvDM0TpAQvevxUqG0"
+        style="width: 100%; height: 782px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Vertical cards for Ecommerce products</h4>
+        <div class="card-row">
+          <div class="card vertical">
+            <div class="card-image">
+              <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg" alt="pic of product"/>
+              <span class="btn-image">
+                <ion-icon name="close-circle"></ion-icon>
+              </span>
+            </div>
+
+            <div class="card-body">
+              <div class="desc">
+              <h3 class="card-title">Dennis Lingo</h3>
+              <p class="card-description">Slim Fit Casual Shirt</p>
+              <p class="card-price">
+                <b>Rs. 628</b>
+                <span><small><s>Rs. 1849</s></small></span>
+                <span class="card-off">(66% Off)</span>
+              </p>
+              </div>
+              <button class="btn btn-primary">WISHLIST</button>
+            </div>
+          </div>
+
+          <div class="card vertical">
+            <div class="card-image">
+              <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2230204/2021/3/16/b93f84ed-41cd-4f2b-bb52-f2b67f8c6c2d1615874312574-Roadster-Men-Blue--Black-Regular-Fit-Checked-Casual-Shirt-74-1.jpg" alt="pic of product"/>
+              <span class="btn-image">
+                <ion-icon name="heart"></ion-icon>
+              </span>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">Roadster Lingo</h3>
+              <p class="card-description">Regular Fit Casual Shirt</p>
+              <p class="card-price">
+                <b>Rs. 584</b>
+                <span><small><s>Rs. 1299</s></small></span>
+                <span class="card-off">(66% Off)</span>
+              </p>
+              <button class="btn btn-primary">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for Vertical cards of Ecommerce products -->
+        <!-- <iframe
+          src="https://carbon.now.sh/embed/w0ZyvNVn3Him3cnj2K8m"
+          style="width: 1024px; height: 1024px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+          src="https://carbon.now.sh/embed/w0ZyvNVn3Him3cnj2K8m"
+          style="width: 100%; height: 1024px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Horizontal cards</h4>
+        <div class="card-row">
+          <div class="card horizontal">
+            <img src="https://via.placeholder.com/100x80" alt="image" class="horizontal-card-image"/>
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <div class="card horizontal">
+            <img src="https://via.placeholder.com/100x80" alt="image" class="horizontal-card-image"/>
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="icons-horizontal">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Code snippet from Carbon for horizontal cards -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/xCjlVvKw9F50nsiwWZBj"
+        style="width: 690px; height: 689px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/xCjlVvKw9F50nsiwWZBj"
+        style="width: 100%; height: 689px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+
+        <h4>Horizontal cards for Cart</h4>
+        <div class="card horizontal">
+          <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1291760/2017/12/5/11512469309068-Highlander-Dark-Green-Slim-Fit-Casual-Shirt-5071512469308877-3.jpg" alt="image" class="horizontal-card-image"/>
+          <div class="card-body">            
+            <div class="horizontal-section">
+              <p class="product-title">
+                Roadster
+              </p>
+              <p class="offered-price">Rs. 1599</p>
+            </div>
+
+            <div class="horizontal-section">
+              <p>
+                Slim Fit Casual Shirt
+              </p>
+              <p>
+                <s>
+                  <small>Rs. 2599</small>
+                </s>
+              </p>
+            </div>
+
+            <div class="horizontal-section">
+              <p>
+                Qty:
+                <button class="btn btn-outline-primary btn-inc"><ion-icon name="add"></ion-icon></button>
+                1
+                <button class="btn btn-outline-primary btn-dec"><ion-icon name="remove"></ion-icon></button>
+              </p>
+              <p>Size: 40</p>
+            </div>
+
+            <div class="horizontal-section">
+              <button class="btn btn-sm btn-outline-primary">REMOVE</button>
+              <button class="btn btn-sm btn-outline-primary">
+                MOVE TO WISHLIST
+              </button>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Code snippet from Carbon for horizontal cards of Cart -->
+        <!-- <iframe
+          src="https://carbon.now.sh/embed/pIMLKSiQx8ssnsQ2qLrx"
+          style="width: 1024px; height: 931px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+          src="https://carbon.now.sh/embed/pIMLKSiQx8ssnsQ2qLrx"
+          style="width: 100%; height: 931px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="modal">
+        <h3>Modals</h3>
+        <button class="btn btn-primary open-modal">Open Modal</button>
+
+        <div class="modal">
+          <div class="modal-content">
+            <span
+              class="close-button"              
+              ><ion-icon name="close-circle"></ion-icon
+            ></span>
+            <div>
+              <h3>This is a Modal</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aspernatur, deleniti dolorem? Deleniti aliquam adipisci,
+                corrupti suscipit doloribus laboriosam amet repellat earum
+                reiciendis, repellendus dolores expedita totam distinctio
+                laborum quasi molestias. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum, debitis repellat adipisci laudantium
+                necessitatibus nam non ratione minima odio dignissimos nemo,
+                fuga quis iusto praesentium ad commodi inventore a eligendi!
+              </p>
+              <div class="modal-btn">
+                <button class="btn btn-outline-primary">CLOSE</button>
+                <button class="btn btn-primary">CONTINUE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for modal -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/YuF6cRZY24ohWae44ccx"
+        style="width: 749px; height: 651px; display: block; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/YuF6cRZY24ohWae44ccx"
+        style="width: 100%; height: 651px; display: block; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="input">
+        <h3>Input</h3>
+
+        <div>
+          <label for="formControlInput" class="form-label">Name</label>
+          <input type="text" id="formControlInput" class="form-control" />
+        </div>
+
+        <div>
+          <label for="formControlTextarea" class="form-label">Address</label>
+          <textarea id="formControlTextarea" rows="5" class="form-control"></textarea>
+        </div>
+
+        <!-- Code snippet from Carbon for input controls -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/geDopqExzReZk0RQAlFw"
+        style="width: 808px; height: 354px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/geDopqExzReZk0RQAlFw"
+        style="width: 100%; height: 354px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="list">
+        <h3>List</h3>
+
+        <h4>Spaced list</h4>
+        <div class="list">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus repellendus veniam quos minus quia eligendi fugit excepturi omnis fuga quae? Incidunt, laborum id quam sint fugit autem eligendi nobis nemo?
+        </div>
+
+        <div class="list">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus repellendus veniam quos minus quia eligendi fugit excepturi omnis fuga quae? Incidunt, laborum id quam sint fugit autem eligendi nobis nemo?
+        </div>
+
+        <!-- Code snippet from Carbon for spaced list -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/TRxzE0u6Ch2DHjkyId1z"
+        style="width: 1024px; height: 391px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/TRxzE0u6Ch2DHjkyId1z"
+        style="width: 100%; height: 391px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        
+
+        <h4>Stacked list</h4>
+        <div class="list stacked-list">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, sit? Ut dolor quod sapiente, cum id sed fuga. Explicabo quibusdam facilis maxime fugiat quisquam reprehenderit ratione sequi aut sit rem.
+        </div>
+        
+        <div class="list stacked-list">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, sit? Ut dolor quod sapiente, cum id sed fuga. Explicabo quibusdam facilis maxime fugiat quisquam reprehenderit ratione sequi aut sit rem.
+        </div>
+
+        <!-- Code snippet from Carbon for stacked list -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/3yP2N4scKWf3FRAUrBRS"
+        style="width: 1024px; height: 354px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/3yP2N4scKWf3FRAUrBRS"
+        style="width: 100%; height: 354px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </section>
+
+      <section id="navigation">
+        <h3>Navigation</h3>
+        
+        <nav class="navigation">         
+          <h3 class="nav-brand">UI BLOCKS</h3>
+          <ul>
+            <li><a href="#">HOME</a> </li>
+            <li><a href="#">ABOUT</a> </li>
+            <li><a href="#">CONTACT</a> </li>
+            <li><button class="btn">SIGN IN</button></li>
+            <li><button class="btn">SIGN UP</button></li>
+          </ul>
+        </nav>
+
+        <!-- Code snippet from Carbon for navigation -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/Hu9WAR9YSqWjHLWMVfpu"
+        style="width: 681px; height: 372px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/Hu9WAR9YSqWjHLWMVfpu"
+        style="width: 100%; height: 372px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="avatar">
+        <h3>Avatar</h3>
+  
+        <div class="avatars">          
+          <div class="avatar avatar-icn" >
+            <ion-icon name="person" class="avatar-icon"></ion-icon>
+          </div>
+
+          <div class="avatar">
+            <img src="https://bit.ly/dan-abramov" alt="image" class="avatar-img">
+          </div>
+
+          <div class="avatar avatar-lg">
+            <img src="https://bit.ly/kent-c-dodds" alt="image" class="avatar-img">
+          </div>
+
+          <div class="avatar avatar-xl">
+            <img src="https://bit.ly/ryan-florence" alt="image" class="avatar-img">
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for avatar -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/xC9aEC9bXb2xdbMfRjJE"
+        style="width: 783px; height: 503px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/xC9aEC9bXb2xdbMfRjJE"
+        style="width: 100%; height: 503px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="image">
+        <h3>Image</h3>
+
+        <div class="images">
+          <div class="image">
+            <img src="https://bit.ly/dan-abramov" alt="">          
+          </div>
+
+          <div class="image image-md">
+            <img src="https://bit.ly/dan-abramov" alt="">          
+          </div>
+
+          <div class="image image-sm">
+            <img src="https://bit.ly/dan-abramov" alt="">          
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for image -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/iveHZIDqhTewixbd6fpN"
+        style="width: 648px; height: 428px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/iveHZIDqhTewixbd6fpN"
+        style="width: 100%; height: 428px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="typography">
+        <h3>Typography</h3>
+
+        <h4>Text</h4>
+        <div>
+          <p class="text-xl">This is (xl) text</p>
+          <p class="text-lg">This is (lg) text</p>
+          <p class="text-md">This is (md) text</p>
+        </div>
+
+        <!-- Code snippet from Carbon for text -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/rDseNQ4VFlB7gyzN0YmD"
+        style="width: 462px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/rDseNQ4VFlB7gyzN0YmD"
+        style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h4>Heading</h4>
+
+        <div>          
+          <h1 class="text-xl">This is a heading</h1>
+          <h1 class="text-lg">This is a heading</h1>
+          <h1 class="text-md">This is a heading</h1>
+        </div>
+
+        <!-- Code snippet from Carbon for heading -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/nWg4Wdz8seuURG8yON94"
+        style="width: 504px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/nWg4Wdz8seuURG8yON94"
+        style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="toast">
+        <h3>Toast</h3>
+
+        <div class="toast toast-success">
+          <ion-icon class="toast-icon" name="checkmark-circle"></ion-icon>
+          This is a success message! 
+          <span class="toast-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="toast toast-error">
+          <ion-icon class="toast-icon" name="alert-circle"></ion-icon>
+          This is an error message! 
+          <span class="toast-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="toast toast-warning">
+          <ion-icon class="toast-icon" name="alert-circle"></ion-icon>
+          This is a warning message! 
+          <span class="toast-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <div class="toast toast-info">
+          <ion-icon class="toast-icon" name="information-circle"></ion-icon>
+          This is an information message! 
+          <span class="toast-close"><ion-icon name="close"></ion-icon></span>
+        </div>
+
+        <!-- Code snippet from Carbon for heading -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/nZdx8Y6vmU1XCJQT1gsx"
+        style="width: 723px; height: 763px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/nZdx8Y6vmU1XCJQT1gsx"
+        style="width: 100%; height: 763px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <section id="grid">
+        <h3>Grid</h3>
+
+        <div class="row col-2">
+          <div class="col">
+            1 of 2
+          </div>
+          <div class="col">
+            2 of 2
+          </div>          
+        </div>
+
+        <div class="row col-3">
+          <div class="col">
+            1 of 3
+          </div>
+
+          <div class="col">
+            2 of 3
+          </div>
+
+          <div class="col">
+            2 of 3
+          </div>
+        </div>
+
+        <!-- Code snippet from Carbon for grid -->
+        <!-- <iframe
+        src="https://carbon.now.sh/embed/vOu329J5jocPGIwBd1ho"
+        style="width: 344px; height: 596px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+
+        <iframe
+        src="https://carbon.now.sh/embed/vOu329J5jocPGIwBd1ho"
+        style="width: 100%; height: 596px; margin-top: 1rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </section>
+
+      <div class="arrow-top">        
+          <ion-icon name="arrow-up-outline" class="avatar-icon"></ion-icon>        
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://bit.ly/souvik-github" target="_blank"><ion-icon class="logo-github" name="logo-github"></ion-icon
+        ></a>
+
+      <a href="https://bit.ly/souvik-twitter" target="_blank"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon
+        ></a>      
+
+      <a href="https://bit.ly/souvik-linkedin" target="_blank"><ion-icon class="logo-linkedin" name="logo-linkedin"></ion-icon</a>
+      
+      <a href="mailto: souvikjana2013@gmail.com"><ion-icon name="mail"></ion-icon></a>
+
+      <p>
+        Made with <ion-icon name="heart-circle"></ion-icon> by
+        <a class="footer-link" href="https://bit.ly/souvik-jana">Souvik</a>
+      </p>
+    </footer>
+
+    <script src="ui-blocks.js"></script>
+
+    <!-- Script for icons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
