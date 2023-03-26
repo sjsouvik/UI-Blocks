@@ -59,7 +59,7 @@ body {
     "head head"
     "nav main"
     "nav foot";
-  grid-template-columns: 175px auto;
+  grid-template-columns: 200px auto;
 }
 
 .grid-row header {
@@ -73,7 +73,7 @@ body {
   justify-content: space-between;
   background-color: var(--primary-color);
   color: var(--text-color);
-  padding: 2.1rem 1rem;
+  padding: 1.5rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -131,7 +131,7 @@ body {
 .side-menu {
   grid-area: nav;
   position: fixed;
-  top: 5.5rem;
+  top: 4.2rem;
   /* bottom: 5rem; */
   bottom: 0;
   height: auto;
@@ -139,14 +139,12 @@ body {
 
   /* background-color: var(--alert-secondary-background-color); */
   letter-spacing: 1px;
-  padding: 0 0.25rem;
-  width: 175px;
+  width: 200px;
 }
 
 .side-menu-link {
   display: block;
   padding: 1rem;
-  border-radius: 0.25rem;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -389,6 +387,11 @@ body {
 
 .btn-primary:hover {
   background-color: #3f4ed2;
+}
+
+.btn-primary:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 .btn-secondary {
@@ -735,10 +738,10 @@ ion-icon {
   outline: none;
   border: 1px solid black;
   border-radius: 0.25rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   margin-bottom: 1rem;
   width: 80%;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 textarea {
@@ -747,6 +750,8 @@ textarea {
 
 .form-control:focus {
   border-color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 /* Lists */
